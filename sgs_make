@@ -1,0 +1,23 @@
+1.进入 http://jumpserver.dobest.com/assets/user-asset/
+2.连接 10.225.254.41
+3.//进入luowei的账号
+su luowei
+4.cd /home/luowei/
+5.进入对应目录      
+6.git pull  //查看本地分支 git branch
+7.cd gcc
+8.//生成makefile
+sh r_genmakefile.sh
+9.//生成网络库
+sh makeall_b.sh
+10.//清理
+sh makeclean_p.sh
+11//生成
+sh makeall_p.sh
+12.cd bins
+13.rm -rf .gzrm -rf flash843rm -rf nbtest
+14.//共20个文件
+ll|wc -l
+15.//打包
+tar -czvf Server.tar.gz *
+16.//下载
